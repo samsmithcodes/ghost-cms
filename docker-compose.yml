@@ -10,6 +10,14 @@ services:
       database__connection__user: $DB_USER
       database__connection__password: $DB_PASS
       database__connection__database: $DB_NAME
+      mail__transport: $MAIL_TRANSPORT
+      mail__options__service: $MAIL_SERVICE
+      mail__options__host: $MAIL_HOST
+      mail__options__port: $MAIL_PORT
+      mail__options__secure: $MAIL_SECURE
+      mail__options__auth__user: $MAIL_USER
+      mail__options__auth__pass: $MAIL_PASS
+      mail__from: $MAIL_FROM
       url: $URL
     volumes:
       - content:/var/lib/ghost/content
