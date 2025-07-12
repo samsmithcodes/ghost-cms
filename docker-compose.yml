@@ -23,5 +23,5 @@ services:
       - db:/var/lib/mysql
 
 volumes:
-  ghost:
+  content:
   db:
